@@ -8,14 +8,20 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<nav>
-		<ul>
-			<li><a href="">home</a></li>
-			<li><a href="">about</a></li>
-			<li><a href="">contact</a></li>
-		</ul>
-	</nav>
-	<section role="region" aria-labelledby="audio-section-heading">
+	<header role="banner">
+        <h1>Accessible Audio Page</h1>
+    </header>
+
+    <nav role="navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main role="main">
+        <section role="region" aria-labelledby="audio-section-heading">
             <h1 id="audio-section-heading">3 random audios</h1>
             
             <audio controls role="application" aria-label="Kangaroo MusiQue - The Neverwritten Role Playing Game">
@@ -33,6 +39,7 @@
                 Your browser does not support the audio element.
             </audio>
         </section>
+    </main>
     <script type="text/javascript" src="./script.js">
 </script>
 
